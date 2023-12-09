@@ -1,0 +1,119 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        /*zadanie 4.1
+        {
+            int z, d, p;
+            for ( z = 0; z <= 1000; z++)
+                for ( d = 0; d <= 500; d++)
+                    for ( p = 0; p <= 200; p++)
+                        if (1 * z + 2 * d + p * 5 == 1000 & z == d & z == p)
+                            Console.WriteLine(z + " " + d + " " + p);
+        }
+       */
+        {
+            /*zadanie 4.2 
+                  for (int i = 1; i <= 10; i++)
+              {
+                  for (int j = 1; j <= 10; j++)
+                  {
+                      if (i + j == 11 | i == j | (i >= 4 & i <= 7 & j >= 4 & j <= 7))
+                          Console.Write(" * ");
+                      else
+                          Console.Write("   ");
+                  }
+                  Console.WriteLine();
+            */
+            /*zadanie 4.3
+            Console.WriteLine("Wpisz liczbe od 9 do 15 nieparzysta");
+            int n = int.Parse(Console.ReadLine());
+            for (int i = 1; i <= n; i++)
+            {
+                for (int j = 1; j <= n; j++)
+                {
+                    if (j >= 2 & j <= n - 1 & i >= 2 & i <= n - 1 & ((n - 1) / 2 != i - 1) & ((n - 1) / 2 != j -1))
+                        Console.Write("   ");
+                    else
+                        Console.Write(" * ");
+                }
+                Console.WriteLine();
+
+            }
+            Console.ReadKey();
+            */
+            /*zadnia 4.4
+            for (int i = 2; i <=100; i++)
+            {
+                bool isPrime1 = true;
+                bool isPrime2 = true;
+
+                for (int j = 2; j <= Math.Sqrt(i) || j <= Math.Sqrt(i + 2); j++)
+                {
+                    if (i % j == 0 && j <= Math.Sqrt(i))
+                    {
+                        isPrime1 = false;
+                    }
+                    if ((i + 2) % j == 0 && j <= Math.Sqrt(i + 2))
+                    {
+                        isPrime2 = false;
+                    }
+                    if (!isPrime1 && !isPrime2)
+                    {
+                        break;
+                    }
+                    }
+                    if (isPrime1 && isPrime2)
+                    {
+                        Console.WriteLine($"({i}, {i + 2})");
+                    }
+                 */
+            /*zadanie 4.5
+            int liczba = 100;
+
+            do
+            {
+                do
+                {
+                    if (liczba % 2 == 0 || liczba % 3 != 0 || liczba % 7 != 0)
+                    {
+                        liczba++;
+                        continue;
+                    }
+                    Console.WriteLine("Liczba {0} jest nieparzysta i jest podzielna przez 3 i 7", liczba);
+                    liczba++;
+                }
+                while (liczba <= 200);
+
+            } while (liczba <= 200);
+            */
+            /*zadanie 4.6
+            int liczba = 1;
+            while (liczba <= 10000)
+            {
+                int sum = 0;
+                int j = 1;
+
+                while (j <= liczba /2)
+                {
+                    if(liczba % j ==0)
+                    {
+                        sum += j;
+                    }
+                    j++;
+                }
+
+                if (sum== liczba)
+                {
+                    Console.WriteLine(liczba);
+                }
+                liczba++;
+            }
+            */
+
+        }
+    }
+}
